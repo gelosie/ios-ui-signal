@@ -22,6 +22,7 @@
 - (void)handleUISignal:(BeeUISignal *)signal
 {
 	signal.reach = YES;
+    NSLog(@"%@",signal);
 }
 
 - (BeeUISignal *)sendUISignal:(NSString *)name

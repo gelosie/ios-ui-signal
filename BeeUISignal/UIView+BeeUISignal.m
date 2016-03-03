@@ -19,13 +19,14 @@
 
 - (void)handleUISignal:(BeeUISignal *)signal
 {
-	if ( self.superview )
+	if (self.nextResponder)
 	{
-		[signal forward:self.superview];
+		[signal forward:self.nextResponder];
 	}
 	else
 	{
 		signal.reach = YES;
+        NSLog(@"%@",signal);
 	}
 }
 

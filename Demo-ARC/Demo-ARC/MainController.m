@@ -30,6 +30,7 @@
     NSLog(@"----------  handleUISignal  fire ");
 
 }
+
 - (void)handleUISignal_View1:(BeeUISignal *)signal
 {
     [super handleUISignal:signal];
