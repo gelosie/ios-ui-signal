@@ -199,14 +199,14 @@
         //NSLog(@"==== (%@)\n (%@)\n ",[self.source class],[self.target class]);
 		NSObject * targetObject = _target;
 		
-		if ( [_target isKindOfClass:[UIView class]] )
-		{
-			UIViewController * viewController = [(UIView *)_target viewController];
-			if ( viewController )
-			{
-				targetObject = viewController;
-			}
-		}
+//		if ( [_target isKindOfClass:[UIView class]] )
+//		{
+//			UIViewController * viewController = [(UIView *)_target viewController];
+//			if ( viewController )
+//			{
+//				targetObject = viewController;
+//			}
+//		}
 
 		{
 			NSString * selectorName;
